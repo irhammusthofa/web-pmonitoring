@@ -1,0 +1,176 @@
+[
+    {
+        "name": "chriskacerguis/codeigniter-restserver",
+        "version": "3.0.3",
+        "version_normalized": "3.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/chriskacerguis/codeigniter-restserver.git",
+            "reference": "3a5ba0dffdebd24cc215ef714b72208c88304203"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/chriskacerguis/codeigniter-restserver/zipball/3a5ba0dffdebd24cc215ef714b72208c88304203",
+            "reference": "3a5ba0dffdebd24cc215ef714b72208c88304203",
+            "shasum": ""
+        },
+        "require": {
+            "codeigniter/framework": "^3.0.4",
+            "php": ">=5.4.0"
+        },
+        "time": "2017-09-23T16:44:55+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "application/libraries/Format.php",
+                "application/libraries/REST_Controller.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Kacerguis",
+                "role": "Developer"
+            }
+        ],
+        "description": "REST Server for the CodeIgniter framework",
+        "homepage": "https://github.com/chriskacerguis/codeigniter-restserver"
+    },
+    {
+        "name": "codeigniter/framework",
+        "version": "3.1.10",
+        "version_normalized": "3.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bcit-ci/CodeIgniter.git",
+            "reference": "c576995304fc3609cca0b7b92d1b2cd611ec82f5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/c576995304fc3609cca0b7b92d1b2cd611ec82f5",
+            "reference": "c576995304fc3609cca0b7b92d1b2cd611ec82f5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.7"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "1.1.*",
+            "phpunit/phpunit": "4.* || 5.*"
+        },
+        "suggest": {
+            "paragonie/random_compat": "Provides better randomness in PHP 5.x"
+        },
+        "time": "2019-01-16T15:49:35+00:00",
+        "type": "project",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "The CodeIgniter framework",
+        "homepage": "https://codeigniter.com"
+    },
+    {
+        "name": "mnshankar/linear-regression",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mnshankar/linear-regression.git",
+            "reference": "cb6d1b2bdd2b1df4354806d66e818303bdc92120"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mnshankar/linear-regression/zipball/cb6d1b2bdd2b1df4354806d66e818303bdc92120",
+            "reference": "cb6d1b2bdd2b1df4354806d66e818303bdc92120",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.5.0"
+        },
+        "time": "2015-02-24T18:40:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "mnshankar\\LinearRegression\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Shankar Manamalkav",
+                "email": "nshankar@ufl.edu"
+            }
+        ],
+        "description": "PHP package for computation of simple linear regression parameters"
+    },
+    {
+        "name": "php-ai/php-ml",
+        "version": "0.8.0",
+        "version_normalized": "0.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-ai/php-ml.git",
+            "reference": "5e02b893e904761cd7e2415b11778cd421494c07"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-ai/php-ml/zipball/5e02b893e904761cd7e2415b11778cd421494c07",
+            "reference": "5e02b893e904761cd7e2415b11778cd421494c07",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "phpbench/phpbench": "^0.14.0",
+            "phpstan/phpstan-phpunit": "^0.10",
+            "phpstan/phpstan-shim": "^0.10",
+            "phpstan/phpstan-strict-rules": "^0.10",
+            "phpunit/phpunit": "^7.0.0",
+            "symplify/coding-standard": "^5.1",
+            "symplify/easy-coding-standard": "^5.1"
+        },
+        "time": "2019-03-20T22:22:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Phpml\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Arkadiusz Kondas",
+                "email": "arkadiusz.kondas@gmail.com"
+            }
+        ],
+        "description": "PHP-ML - Machine Learning library for PHP",
+        "homepage": "https://github.com/php-ai/php-ml",
+        "keywords": [
+            "Neural network",
+            "artificial intelligence",
+            "computational learning theory",
+            "data science",
+            "feature extraction",
+            "machine learning",
+            "pattern recognition"
+        ]
+    }
+]
