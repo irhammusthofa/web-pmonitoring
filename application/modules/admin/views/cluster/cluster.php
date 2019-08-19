@@ -11,6 +11,18 @@
 <section class="content">
     <!-- Default box -->
     <?= fs_show_alert() ?>
+    <form method="get">
+        <div class="form-group">
+            <label>Filter</label>
+            <?php
+                $f = [''=>'Semua','c1'=>'C1','c2'=>'C2','c3'=>'C3'];
+                echo form_dropdown('filter',$f,@$_GET['filter'],array('class'=>'form-control')) ?>
+        </div> 
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Tampilkan</button>
+        </div>   
+    </form>
+    
     <?php for($iterasi=0;$iterasi<count($data['iterasi']);$iterasi++){ ?>
     <div class="box">
         <div class="box-header with-border">
@@ -66,7 +78,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $i = 0;foreach ($data['iterasi'][$iterasi]['data'] as $item) { $i++; ?>
+                    <?php $i = 0;foreach ($data['iterasi'][$iterasi]['data'] as $item) { 
+                        if (!empty($filter)){
+                            if (@$filter=='c1'){
+                                if ($item->c1!='X'){
+                                    continue;
+                                }
+                            }else if (@$filter=='c2'){
+                                if ($item->c2!='X'){
+                                    continue;
+                                }
+
+                            }else if (@$filter=='c3'){
+                                if ($item->c3!='X'){
+                                    continue;
+                                }
+                            }
+                        }
+
+                        $i++; ?>
                         <tr>
                             <td><?= $i ?></td>
                             <td><?= $item->s_perusahaan ?></td>

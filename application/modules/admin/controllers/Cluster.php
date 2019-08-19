@@ -185,10 +185,12 @@ class Cluster extends Admin_Controller {
 		$this->content 	= "cluster/cluster";
 		$this->assets 	= array();
 		
+		$filter = $this->input->get('filter',TRUE);
         $data['iterasi'] = $this->kmeans($id);
         //echo json_encode($data['iterasi']);
         $param = array(
         	'data' 	=> $data,
+        	'filter'=> $filter,
 		);
         $this->template($param);
 
